@@ -9,7 +9,7 @@ public class Sistema {
     public Sistema() {
         this.continuarExecucao = true;
         this.scanner = new Scanner(System.in);
-        this.conta = new Conta(1236, 1000, "Toad");
+        this.conta = new Conta(1236, 1000, "Toad"); // Conta no banco
     }
 
     public void executar(){
