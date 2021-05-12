@@ -1,4 +1,4 @@
-package carvalho.zanini;
+package yoshita.cindy;
 
 public class Cliente {
     public Cliente(String nome){

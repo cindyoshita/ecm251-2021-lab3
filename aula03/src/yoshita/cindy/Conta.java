@@ -36,7 +36,7 @@ public class Conta {
         return false;
     }
 
-    @Override
+    @Override // O formato de como vai ser exibido quando de print na conta ex: C1:Conta{numero= _ , saldo= _ , cliente= _ }
     public String toString() {
         return "Conta{" +
                 "numero=" + numero +

@@ -1,13 +1,6 @@
-package carvalho.zanini;
+package yoshita.cindy;
 
 public class Conta {
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
 
     //Atributos das classe
     private Cliente cliente;
@@ -15,6 +8,19 @@ public class Conta {
     private int numero;
 
     //Métodos da classe
+    // Consigo ver o atributo que esta privado
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    // Consigo mexer o atributo que esta privado
+    //public void setSaldo(double novoSaldo){
+        //this.saldo = novoSaldo;
+    //}
+
+    public int getNumero() {
+        return numero;
+    }
 
     //Construtor da classe
     public Conta(String nomeCliente, double saldoInicial){
