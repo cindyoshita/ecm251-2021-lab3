@@ -1,4 +1,10 @@
 package maua.cindy.thiago.model.membros;
 
-public class BigBrothers {
+import maua.cindy.thiago.model.Membro;
+
+public class BigBrothers extends Membro {
+    @Override
+    public void Mensagem() {
+        System.out.println("“Sempre ajudando as pessoas membros ou não S2!”");
+    }
 }

@@ -1,4 +1,6 @@
 package maua.cindy.thiago.model.membros;
 
-public class ScriptGuys {
+import maua.cindy.thiago.model.Membro;
+
+public class ScriptGuys extends Membro {
 }
