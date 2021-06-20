@@ -21,7 +21,7 @@ public class ValidadorCPF {
             return false;
 
         //Verificar se o CPF está dentro dos inválidos conhecidos
-        for(String cpfInvalido : invalidosConhecidos){
+        for(String cpfInvalido : invalidosConhecidos){ // for each - for para cada variável (no caso o objeto cpfInvalidos percorre dentro do interável invalidosConhecidos
             if (cpfInvalido.equals(cpf))
                 return false;
         }
