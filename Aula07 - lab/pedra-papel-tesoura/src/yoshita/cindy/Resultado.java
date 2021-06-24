@@ -1,4 +1,4 @@
-package carvalho.murilo;
+package yoshita.cindy;
 
 public enum Resultado {
     GANHEI, PERDI, EMPATEI;

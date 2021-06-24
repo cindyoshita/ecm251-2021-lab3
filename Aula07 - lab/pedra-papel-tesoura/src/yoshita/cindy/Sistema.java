@@ -1,4 +1,4 @@
-package carvalho.murilo;
+package yoshita.cindy;
 
 import java.util.Random;
 import java.util.Scanner;

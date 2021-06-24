@@ -1,4 +1,4 @@
-package carvalho.murilo;
+package yoshita.cindy;
 
 public class Jogada {
     public Resultado verificaResultado(Jogada jogada) {

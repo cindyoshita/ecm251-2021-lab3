@@ -1,19 +1,19 @@
-package carvalho.murilo;
+package yoshita.cindy;
 
-public class Tesoura extends Jogada{
+public class Papel extends Jogada{
 
     @Override
     public boolean verificaSeGanhei(Jogada jogada) {
-        return jogada instanceof Papel;
-    }
-
-    @Override
-    public boolean verificaSePerdi(Jogada jogada) {
         return jogada instanceof Pedra;
     }
 
     @Override
+    public boolean verificaSePerdi(Jogada jogada) {
+        return jogada instanceof Tesoura;
+    }
+
+    @Override
     public String toString() {
-        return "Tesoura";
+        return "Papel";
     }
 }
