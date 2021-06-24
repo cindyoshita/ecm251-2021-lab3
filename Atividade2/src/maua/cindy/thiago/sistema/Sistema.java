@@ -1,22 +1,26 @@
 package maua.cindy.thiago.sistema;
 
-import maua.cindy.thiago.enumeracoes.TipoHorario;
 
+import maua.cindy.thiago.sistema.metodos.MudarHorario;
 import java.util.Scanner;
 
 public class Sistema {
-    private Scanner scanner;
+    public void Menu(){
 
-    public TipoHorario mudarHorario(){
-        System.out.println("Digite o periodo:");
-        String hora = scanner.next();
-        if(hora.equalsIgnoreCase("Regular")){
-            return TipoHorario.REGULAR;
-        }else if(hora.equalsIgnoreCase("Extra")){
-            return TipoHorario.EXTRA;
+        MudarHorario mh = new MudarHorario();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bem vindo!! Digite qual opção deseja selecionar: \n" +
+                "1 - Mudar Horario");
+
+        int op = scanner.nextInt();
+
+        switch (op){
+            case 1:
+                System.out.println("Voce escolheu Mudar o horario");
+                mh.mudarHorario();
+                break;
         }
 
-        return null;
     }
 
 }

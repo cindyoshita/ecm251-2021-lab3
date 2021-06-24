@@ -5,17 +5,18 @@ import maua.cindy.thiago.enumeracoes.TipoHorario;
 
 public abstract class Membro implements PostarMensagem,Apresentacao {
 
-    public void Mensagem(){
-        System.out.println("Mensagem para cada tipo de membro");
+    public void MensagemRegular(){
+        System.out.println("Mensagem para cada tipo de membro regular");
 
     }
-    public String Horario(TipoHorario horario){
-        if(horario == TipoHorario.REGULAR){
-            return "Mensagem";
-        }if(horario == TipoHorario.EXTRA){
-            return "Extra";
-        }return "Não tem mensagem";
+    public void MensagemExtra(){
+        System.out.println("Mensagem para cada tipo de membro extra");
 
     }
+
+    public void MembroRegular(){
+        MensagemRegular();
+    }
+
 
 }
