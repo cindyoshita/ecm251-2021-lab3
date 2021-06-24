@@ -3,6 +3,7 @@ package yoshita.cindy.pedra_papel_tesoura.models.basinga;
 import yoshita.cindy.pedra_papel_tesoura.models.Jogada;
 import yoshita.cindy.pedra_papel_tesoura.models.classico.Papel;
 import yoshita.cindy.pedra_papel_tesoura.models.classico.Pedra;
+import yoshita.cindy.pedra_papel_tesoura.models.classico.Tesoura;
 
 public class Spoke extends Jogada {
 
@@ -15,7 +16,7 @@ public class Spoke extends Jogada {
 
     @Override
     public boolean verificarSePerdi(Jogada jogada) {
-        return (jogada instanceof Pedra) || (return jogada instanceof Tesoura);
+        return (jogada instanceof Papel) || (jogada instanceof Lagarto);
     }
 
     @Override
