@@ -1,7 +1,10 @@
+//Cindy Natsuki Yoshita RA:19.00633-0
+//Thiago Akio Kanada Tanaka Ra:19.01726-0
+
 package maua.cindy.thiago;
 
 import maua.cindy.thiago.sistema.Sistema;
-import maua.cindy.thiago.sistema.metodos.MudarHorario;
+
 
 public class Main {
 

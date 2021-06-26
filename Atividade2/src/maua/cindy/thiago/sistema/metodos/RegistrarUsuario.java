@@ -11,7 +11,9 @@ import maua.cindy.thiago.registro.Usuario;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class RegistrarUsuario {
     public void registro(TipoMembros tm){
@@ -52,8 +54,9 @@ public class RegistrarUsuario {
         FileWriter fw = new FileWriter("arquivo_super_Secreto_nao_abrir.csv");
         TipoMembros tm = TipoMembros.BIGBROTHERS;
         registro(tm);
+
         for(Usuario usuario1 : Usuario.usuarioListado){
-            fw.write(Usuario.usuarioListado.toString());
+            fw.append(usuario1.toString() + "\n");
 
         }
         fw.close();

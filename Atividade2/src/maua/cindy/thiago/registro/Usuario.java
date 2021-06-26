@@ -24,9 +24,9 @@ public class Usuario {
     public String toString() {
         return "Usuario{" +
                 "nomeDeUsuario='" + nomeDeUsuario + '\'' +
-                ", iD=" + iD +
-                ", eMail='" + eMail + '\'' +
-                ", tm=" + tm +
+                "; iD=" + iD +
+                "; eMail='" + eMail + '\'' +
+                "; tm=" + tm +
                 '}';
     }
 }
