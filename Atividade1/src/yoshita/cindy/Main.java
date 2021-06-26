@@ -8,7 +8,7 @@ public class Main {
     public Main() {
     }
 
-    public static void Mmain(String[] args) {
+    public static void main(String[] args) {
         Sistema sistema = new Sistema();
         sistema.start();
     }

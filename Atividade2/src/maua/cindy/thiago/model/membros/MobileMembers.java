@@ -4,12 +4,12 @@ import maua.cindy.thiago.model.Membro;
 
 public class MobileMembers extends Membro {
     @Override
-    public void MensagemRegular() {
-        System.out.println("Sempre ajudando as pessoas membros ou não S2!");;
+    public void mensagemRegular() {
+        System.out.println("Happy Coding!");;
     }
 
     @Override
-    public void MensagemExtra() {
-        System.out.println("...");;
+    public void mensagemExtra() {
+        System.out.println("Happy_C0d1ng. Maskers");;
     }
 }

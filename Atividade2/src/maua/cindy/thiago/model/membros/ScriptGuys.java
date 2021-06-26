@@ -4,12 +4,12 @@ import maua.cindy.thiago.model.Membro;
 
 public class ScriptGuys extends Membro {
     @Override
-    public void MensagemRegular() {
-        System.out.println("Sempre ajudando as pessoas membros ou não S2!");;
+    public void mensagemRegular() {
+        System.out.println("Prazer em ajudar novos amigos de código!");;
     }
 
     @Override
-    public void MensagemExtra() {
-        System.out.println("...");;
+    public void mensagemExtra() {
+        System.out.println("QU3Ro_S3us_r3curs0s.py");;
     }
 }

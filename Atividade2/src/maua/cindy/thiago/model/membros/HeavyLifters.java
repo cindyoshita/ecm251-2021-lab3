@@ -4,12 +4,12 @@ import maua.cindy.thiago.model.Membro;
 
 public class HeavyLifters extends Membro {
     @Override
-    public void MensagemRegular() {
-        System.out.println("Sempre ajudando as pessoas membros ou não S2!");;
+    public void mensagemRegular() {
+        System.out.println("Podem contar conosco!");;
     }
 
     @Override
-    public void MensagemExtra() {
-        System.out.println("...");;
+    public void mensagemExtra() {
+        System.out.println("Extra");;
     }
 }

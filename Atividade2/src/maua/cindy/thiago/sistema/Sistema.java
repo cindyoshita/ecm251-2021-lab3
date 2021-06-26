@@ -1,31 +1,64 @@
 package maua.cindy.thiago.sistema;
 
 
+import maua.cindy.thiago.enumeracoes.TipoHorario;
 import maua.cindy.thiago.model.Membro;
+import maua.cindy.thiago.model.membros.BigBrothers;
 import maua.cindy.thiago.sistema.metodos.MudarHorario;
+import maua.cindy.thiago.sistema.metodos.RegistrarUsuario;
+
 import java.util.Scanner;
 
 public class Sistema {
-    public void Menu(){
+    private boolean continuarExecucao;
+    private static Scanner scanner;
+    public TipoHorario a = TipoHorario.REGULAR;
+
+    public void start() throws Exception {
+    this.executar();
+}
+    public void executar() throws Exception {
+        this.continuarExecucao = true;
+        scanner = new Scanner(System.in);
+        while(this.continuarExecucao) {
+            this.exibirMenu();
+            int opcao = Integer.parseInt(scanner.nextLine());
+            this.Menu(opcao);
+        }
+
+    }
+    public void Menu(int opcao) throws Exception {
 
         MudarHorario mh = new MudarHorario();
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Bem vindo!! Digite qual opção deseja selecionar: \n" +
-                "1 - Mudar Horario \n" + "2 - Cadastrar um usuário \n" + "3 - Postar uma mensagem para cada funcionário \n"
-                + "4 - Excluir funcionário \n" +"0 - Fechar o sistema \n" );
 
-        int op = scanner.nextInt();
-
-        switch (op){
+        switch (opcao){
+            case 0:
+                System.out.println("Obrigado pela preferencia");
+                this.continuarExecucao = false;
+                break;
             case 1:
                 System.out.println("Voce escolheu Mudar o horario");
-                mh.mudarHorario(mh.scanner());
+                a = mh.mudarHorario(a);
                 break;
             case 2:
+                RegistrarUsuario registrar = new RegistrarUsuario();
+                registrar.serializarRegistro();
                 break;
             case 3:
-                System.out.println("break");
+                BigBrothers bb = new BigBrothers();
+                bb.comparar(a);
         }
+
+    }
+
+    private void exibirMenu() {
+
+        System.out.println("Bem vindo!!Voce esta no horario " + a + " Digite qual opção deseja selecionar:");
+        System.out.println("1 - Mudar Horario");
+        System.out.println("2 - Cadastrar um usuário ");
+        System.out.println("3 - Postar uma mensagem para cada funcionário");
+        System.out.println("4 - Excluir funcionário");
+        System.out.println("0 - Sair do sistema");
 
     }
 
