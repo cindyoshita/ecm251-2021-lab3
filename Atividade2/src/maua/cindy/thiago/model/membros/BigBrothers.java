@@ -8,12 +8,14 @@ import maua.cindy.thiago.sistema.metodos.MudarHorario;
 public class BigBrothers extends Membro {
     @Override
     public void mensagemRegular() {
-        System.out.println("Sempre ajudando as pessoas membros ou não S2!");;
+        System.out.println("Sempre ajudando as pessoas membros ou não S2!");
+        ;
     }
 
     @Override
     public void mensagemExtra() {
-        System.out.println("...");;
+        System.out.println("...");
+        ;
     }
 
 }

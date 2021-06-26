@@ -10,6 +10,6 @@ public class ScriptGuys extends Membro {
 
     @Override
     public void mensagemExtra() {
-        System.out.println("QU3Ro_S3us_r3curs0s.py");;
+        System.out.println("“QU3Ro_S3us_r3curs0s.py");;
     }
 }

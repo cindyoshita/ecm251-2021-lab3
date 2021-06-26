@@ -4,6 +4,9 @@ package maua.cindy.thiago.sistema;
 import maua.cindy.thiago.enumeracoes.TipoHorario;
 import maua.cindy.thiago.model.Membro;
 import maua.cindy.thiago.model.membros.BigBrothers;
+import maua.cindy.thiago.model.membros.HeavyLifters;
+import maua.cindy.thiago.model.membros.MobileMembers;
+import maua.cindy.thiago.model.membros.ScriptGuys;
 import maua.cindy.thiago.sistema.metodos.MudarHorario;
 import maua.cindy.thiago.sistema.metodos.RegistrarUsuario;
 
@@ -46,7 +49,15 @@ public class Sistema {
                 break;
             case 3:
                 BigBrothers bb = new BigBrothers();
+                HeavyLifters hl = new HeavyLifters();
+                MobileMembers mm = new MobileMembers();
+                ScriptGuys sg = new ScriptGuys();
+
                 bb.comparar(a);
+                hl.comparar(a);
+                mm.comparar(a);
+                sg.comparar(a);
+
         }
 
     }

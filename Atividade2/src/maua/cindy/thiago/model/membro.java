@@ -8,11 +8,12 @@ import maua.cindy.thiago.sistema.metodos.MudarHorario;
 public abstract class Membro implements PostarMensagem,Apresentacao {
 
 
-    public void comparar(TipoHorario a){
-        if(TipoHorario.REGULAR == a)
-            mensagemRegular();
-        else if(TipoHorario.EXTRA == a){
-            mensagemExtra();
+    public void comparar(TipoHorario a) {
+
+        if (TipoHorario.REGULAR == a)
+            this.mensagemRegular();
+        else if (TipoHorario.EXTRA == a) {
+            this.mensagemExtra();
         }
     }
 
