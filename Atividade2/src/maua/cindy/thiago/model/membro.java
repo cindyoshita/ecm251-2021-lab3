@@ -2,10 +2,8 @@ package maua.cindy.thiago.model;
 
 
 import maua.cindy.thiago.enumeracoes.TipoHorario;
-import maua.cindy.thiago.model.membros.HeavyLifters;
-import maua.cindy.thiago.sistema.metodos.MudarHorario;
 
-public abstract class Membro implements PostarMensagem,Apresentacao {
+public abstract class Membro implements PostarMensagem {
 
 
     public void comparar(TipoHorario a) {
@@ -17,10 +15,7 @@ public abstract class Membro implements PostarMensagem,Apresentacao {
         }
     }
 
-    public abstract void mensagemRegular();
-    public abstract void mensagemExtra();
-
-    }
+}
 
 
 

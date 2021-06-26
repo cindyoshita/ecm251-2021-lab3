@@ -7,8 +7,7 @@ import maua.cindy.thiago.model.membros.BigBrothers;
 import maua.cindy.thiago.model.membros.HeavyLifters;
 import maua.cindy.thiago.model.membros.MobileMembers;
 import maua.cindy.thiago.model.membros.ScriptGuys;
-import maua.cindy.thiago.sistema.metodos.MudarHorario;
-import maua.cindy.thiago.sistema.metodos.RegistrarUsuario;
+import maua.cindy.thiago.sistema.metodos.*;
 
 import java.util.Scanner;
 
@@ -48,16 +47,16 @@ public class Sistema {
                 registrar.serializarRegistro();
                 break;
             case 3:
-                BigBrothers bb = new BigBrothers();
-                HeavyLifters hl = new HeavyLifters();
-                MobileMembers mm = new MobileMembers();
-                ScriptGuys sg = new ScriptGuys();
-
-                bb.comparar(a);
-                hl.comparar(a);
-                mm.comparar(a);
-                sg.comparar(a);
-
+                Mensagem m = new Mensagem();
+                m.mensagemParaTodos(a);
+                break;
+            case 4:
+                RetirarUsuario retirarUsuario = new RetirarUsuario();
+                break;
+            case 5:
+                ApresentarUsuario au = new ApresentarUsuario();
+                au.apresentar();
+                break;
         }
 
     }
@@ -69,6 +68,7 @@ public class Sistema {
         System.out.println("2 - Cadastrar um usuário ");
         System.out.println("3 - Postar uma mensagem para cada funcionário");
         System.out.println("4 - Excluir funcionário");
+        System.out.println("5 - Apresentar relatório");
         System.out.println("0 - Sair do sistema");
 
     }

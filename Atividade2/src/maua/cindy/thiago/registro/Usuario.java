@@ -9,7 +9,7 @@ public class Usuario {
     String nomeDeUsuario;
     public int iD;
     String eMail;
-    TipoMembros tm;
+    public TipoMembros tm;
 
     public Usuario(String nomeDeUsuario, int iD, String eMail, TipoMembros tm) {
         this.nomeDeUsuario = nomeDeUsuario;
@@ -27,6 +27,7 @@ public class Usuario {
                 "; iD=" + iD +
                 "; eMail='" + eMail + '\'' +
                 "; tm=" + tm +
-                '}';
+                '}' +
+                '\n';
     }
 }

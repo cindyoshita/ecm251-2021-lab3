@@ -52,16 +52,36 @@ public class RegistrarUsuario {
 
     public void serializarRegistro()throws Exception {
         FileWriter fw = new FileWriter("arquivo_super_Secreto_nao_abrir.csv");
-        TipoMembros tm = TipoMembros.BIGBROTHERS;
+        TipoMembros tm = null;
         registro(tm);
+        int b = 0;
+        int h = 0;
+        int m = 0;
+        int s = 0;
 
         for(Usuario usuario1 : Usuario.usuarioListado){
             fw.append(usuario1.toString() + "\n");
+            if(usuario1.tm == TipoMembros.BIGBROTHERS){
+                b += 1;
+                String auxb [] = new String[b+2];
+                auxb[b] = usuario1.toString();
+                System.out.println(auxb[b]);
+            }else if(usuario1.tm == TipoMembros.HEAVYLIFTERS){
+                h += 1;
+                String auxh [] = new String[h+2];
+                auxh[h] = usuario1.toString();
+            }else if(usuario1.tm == TipoMembros.MOBILEMEMBERS){
+                m += 1;
+                String auxm [] = new String[m+2];
+                auxm[m] = usuario1.toString();
+            }else if(usuario1.tm == TipoMembros.SCRIPTGUYS){
+                s += 1;
+                String auxs [] = new String[s+2];
+                auxs[s] = usuario1.toString();
+            }
 
         }
         fw.close();
     }
-
-
 
 }
