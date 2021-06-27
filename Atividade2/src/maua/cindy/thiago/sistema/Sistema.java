@@ -2,11 +2,7 @@ package maua.cindy.thiago.sistema;
 
 
 import maua.cindy.thiago.enumeracoes.TipoHorario;
-import maua.cindy.thiago.model.Membro;
-import maua.cindy.thiago.model.membros.BigBrothers;
-import maua.cindy.thiago.model.membros.HeavyLifters;
-import maua.cindy.thiago.model.membros.MobileMembers;
-import maua.cindy.thiago.model.membros.ScriptGuys;
+
 import maua.cindy.thiago.sistema.metodos.*;
 
 import java.util.Scanner;
@@ -52,6 +48,7 @@ public class Sistema {
                 break;
             case 4:
                 RetirarUsuario retirarUsuario = new RetirarUsuario();
+                retirarUsuario.retirar();
                 break;
             case 5:
                 ApresentarUsuario au = new ApresentarUsuario();

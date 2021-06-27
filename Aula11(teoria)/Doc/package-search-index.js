@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"yoshita.cindy"},{"l":"yoshita.cindy.interfaces"},{"l":"yoshita.cindy.model"}]
