@@ -11,6 +11,7 @@ public class Sistema {
     private boolean continuarExecucao;
     private static Scanner scanner;
     public TipoHorario a = TipoHorario.REGULAR;
+    int i =1;
 
     public void start() throws Exception {
     this.executar();
@@ -40,7 +41,8 @@ public class Sistema {
                 break;
             case 2:
                 RegistrarUsuario registrar = new RegistrarUsuario();
-                registrar.serializarRegistro();
+                registrar.serializarRegistro(i);
+                i +=1;
                 break;
             case 3:
                 Mensagem m = new Mensagem();

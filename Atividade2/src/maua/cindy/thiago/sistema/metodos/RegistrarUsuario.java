@@ -2,23 +2,15 @@ package maua.cindy.thiago.sistema.metodos;
 
 
 import maua.cindy.thiago.enumeracoes.TipoMembros;
-import maua.cindy.thiago.model.membros.BigBrothers;
-import maua.cindy.thiago.model.membros.HeavyLifters;
-import maua.cindy.thiago.model.membros.MobileMembers;
-import maua.cindy.thiago.model.membros.ScriptGuys;
 import maua.cindy.thiago.registro.Usuario;
 
-import java.io.File;
 import java.io.FileWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.stream.Collectors;
+
 
 public class RegistrarUsuario {
-    public void registro(TipoMembros tm){
+    public void registro(TipoMembros tm, int i){
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Digite a sigla da categoria de funcionario o qual deseja cadastrar: \n" +
                 "bb -> BIGBROTHERS\n" +
                 "hl -> HEAVYLIFTERS\n" +
@@ -41,19 +33,15 @@ public class RegistrarUsuario {
         System.out.println("Digite o email que deseja registrar:");
         String email = scanner.nextLine();
 
-        System.out.println("Digite o iD que deseja registrar:");
-        int identificacao = scanner.nextInt();
-
-
-        new Usuario(nomeUsuario, identificacao, email, tm);
+        new Usuario(nomeUsuario, i, email, tm);
         System.out.println(Usuario.usuarioListado);
 
     }
 
-    public void serializarRegistro()throws Exception {
+    public void serializarRegistro(int i)throws Exception {
         FileWriter fw = new FileWriter("arquivo_super_Secreto_nao_abrir.csv");
         TipoMembros tm = null;
-        registro(tm);
+        registro(tm,i);
 
         for(Usuario usuario1 : Usuario.usuarioListado){
             fw.append(usuario1.toString() + "\n");
