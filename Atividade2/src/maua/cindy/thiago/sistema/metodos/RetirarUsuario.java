@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class RetirarUsuario {
     /**
-     * Faz um scanner para armazenar o id do usuario e com base nesse id, ele sera removido
+     * Faz um scanner para armazenar a posicao do usuario que deseja-se retirar
      */
     public void retirar(){
         Scanner scanner = new Scanner(System.in);
