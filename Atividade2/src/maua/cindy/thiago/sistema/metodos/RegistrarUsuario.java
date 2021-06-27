@@ -21,7 +21,6 @@ public class RegistrarUsuario {
  "mm -> MOBILEMEMBERS\n" +
  "sg -> SCRIPTGUYS\n");
  String cargo =  scanner.nextLine();
- try{
      if (cargo.equalsIgnoreCase("bb")) {
          tm = TipoMembros.BIGBROTHERS;
      } else if (cargo.equalsIgnoreCase("hl")) {
@@ -31,9 +30,6 @@ public class RegistrarUsuario {
      } else if (cargo.equalsIgnoreCase("sg")) {
          tm = TipoMembros.SCRIPTGUYS;
      }
- }catch (Exception exception){
-     System.out.println("Essa categoria não existe");
- }
  System.out.println("Digite o nome que deseja registrar:");
  String nomeUsuario = scanner.nextLine();
 

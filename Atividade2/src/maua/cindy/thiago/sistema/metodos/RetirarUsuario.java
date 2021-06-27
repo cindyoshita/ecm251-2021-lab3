@@ -1,5 +1,6 @@
 package maua.cindy.thiago.sistema.metodos;
 
+import maua.cindy.thiago.enumeracoes.TipoMembros;
 import maua.cindy.thiago.registro.Usuario;
 
 import java.util.Scanner;
@@ -10,14 +11,11 @@ public class RetirarUsuario {
      */
     public void retirar(){
         Scanner scanner = new Scanner(System.in);
-        for (Usuario usuario: Usuario.usuarioListado){
+        System.out.println("Qual a posição (utilize o relatorio para saber a posição) que deseja retirar");
+        int indice = scanner.nextInt();
 
-                System.out.println("Qual o id que deseja retirar");
-                int indice = scanner.nextInt();
+        Usuario.usuarioListado.remove(indice - 1);
 
-                Usuario.usuarioListado.remove(indice-1);
 
-        }
-    }
+}}
 
-}
