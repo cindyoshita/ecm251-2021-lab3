@@ -5,9 +5,7 @@ package maua.cindy.thiago;
 
 import maua.cindy.thiago.sistema.Sistema;
 
-/**
- * Inicio do Main
- */
+// Inicialização do sistema
 public class Main {
 
     public static void main(String[] args) throws Exception {

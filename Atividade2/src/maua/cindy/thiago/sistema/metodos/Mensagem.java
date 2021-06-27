@@ -8,8 +8,14 @@ import maua.cindy.thiago.model.membros.MobileMembers;
 import maua.cindy.thiago.model.membros.ScriptGuys;
 import maua.cindy.thiago.registro.Usuario;
 
+
 public class Mensagem {
 
+    /**
+     *Verifica se há algum dos tipos BIGBROTHERS, HEAVYLIFTERS, MOBILEMEMBERS, SCRIPTGUYS no ArrayList usuarioListado
+     * caso tenha, irá inicializar o método comparar especifico de cada membro
+     * @param a parametro do tipo ENUM tipoHorario
+     */
     public void mensagemParaTodos(TipoHorario a){
         BigBrothers bb = new BigBrothers();
         HeavyLifters hl = new HeavyLifters();

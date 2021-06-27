@@ -4,6 +4,9 @@ import maua.cindy.thiago.enumeracoes.TipoMembros;
 
 import java.util.ArrayList;
 
+/**
+ * Cria um ArrayList onde irá armazenar os elementos de seu construtor
+ */
 public class Usuario {
     public static ArrayList<Usuario> usuarioListado = new ArrayList<>();
     String nomeDeUsuario;

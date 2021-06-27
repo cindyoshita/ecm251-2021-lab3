@@ -7,26 +7,46 @@ import maua.cindy.thiago.sistema.metodos.*;
 
 import java.util.Scanner;
 
+/**
+ * Classe responsável pela interação principal com o usuário
+ */
 public class Sistema {
     private boolean continuarExecucao;
     private static Scanner scanner;
     public TipoHorario a = TipoHorario.REGULAR;
     int i =1;
 
+    /**
+     * Incializa o método executar
+     * @throws Exception Joga uma excessão
+     */
     public void start() throws Exception {
     this.executar();
 }
+
+    /**
+     * Ativa o método exibirMenu, cria um scanner, faz com que leia um numero inteiro ,inicializa o menu
+     *Faz com que o menu continue a ser executado enquanto o booleano continuar a fazer a execução enquanto esse estiver true
+     * @throws Exception Joga uma excessão
+     */
     public void executar() throws Exception {
         this.continuarExecucao = true;
         scanner = new Scanner(System.in);
         while(this.continuarExecucao) {
             this.exibirMenu();
             int opcao = Integer.parseInt(scanner.nextLine());
-            this.Menu(opcao);
+            this.menu(opcao);
         }
 
     }
-    public void Menu(int opcao) throws Exception {
+
+    /**
+     * Cria o Switch Case responsavel por: fechar o menu, mudar o horario de trabalho, cadastrar novos membros, postar mensagem caracteristica de cada membro,
+     *responsavel por retirar membros e apresentar relatorio com todos os membros
+     * @param opcao Numero inteiro para selecionar qual caso do Switch case devera ser selecionado
+     * @throws Exception Joga uma excessao
+     */
+    public void menu(int opcao) throws Exception {
 
         MudarHorario mh = new MudarHorario();
 
@@ -60,6 +80,9 @@ public class Sistema {
 
     }
 
+    /**
+     *Exibe o menu de boas vindas
+     */
     private void exibirMenu() {
 
         System.out.println("Bem vindo!!Voce esta no horario " + a + " Digite qual opção deseja selecionar:");
