@@ -76,6 +76,8 @@ public class Sistema {
                 ApresentarUsuario au = new ApresentarUsuario();
                 au.apresentar();
                 break;
+            default:
+                System.out.println("Funcionalidade ainda não implementada");
         }
 
     }
